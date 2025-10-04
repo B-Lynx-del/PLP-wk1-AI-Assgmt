@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeLearning - Empowering Learners</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="hero">
+            <h1>📚 VibeLearning</h1>
+            <p>Empowering learners with warmth and wisdom</p>
+        </div>
+    </header>
+    <main>
+        <!-- Auth Section -->
+        <section id="auth-section">
+            <div class="auth-container">
+                <h2 id="auth-title">🔐 Login</h2>
+                <input type="text" id="username" placeholder="Username" />
+                <input type="password" id="password" placeholder="Password" />
+                <button id="auth-btn">Login</button>
+                <p id="auth-toggle">
+                    Don't have an account? <a href="#" onclick="toggleAuth()">Sign up</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Course Gallery -->
+        <section id="course-gallery" class="hidden">
+            <h2>✨ Explore Our Courses</h2>
+            <div class="course-grid" id="courses">
+                <!-- Cards injected here -->
+            </div>
+        </section>
+
+        <!-- Course Detail View -->
+        <section id="course-detail" class="hidden">
+            <div class="course-info">
+                <h2 id="course-title"></h2>
+                <p id="course-description"></p>
+                <p><strong>⏱ Duration:</strong> <span id="course-duration"></span></p>
+
+                <h3>🎯 Objectives</h3>
+                <ul id="objectives"></ul>
+
+                <h3>📘 Lessons</h3>
+                <ul id="lessons"></ul>
+
+                <button id="complete-btn">✅ Mark as Completed</button>
+                <p id="completion-status"></p>
+                <button id="back-btn">← Back to Courses</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Optional Footer -->
+    <footer>
+        <p>Made with ❤️ in Kenya | VibeCoding Assignment</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
